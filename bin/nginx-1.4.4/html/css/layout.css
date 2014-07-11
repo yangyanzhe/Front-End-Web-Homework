@@ -1,0 +1,380 @@
+p{ 
+	text-indent: 35px;
+	font: 20px "华文中宋",arial;
+	/*text-shadow: #000 0px 1px 0px; */
+	line-height:25px; 
+}
+
+body{
+	font-family: "华文中宋", arial;
+}
+
+div{
+	display: block;
+}
+
+/********************整体布局设计*************************/
+.clearfix:after{
+	visibility: hidden;
+	display: block;
+	content:" ";
+	clear:both;
+	height: 0;
+}
+
+.clearfix{zoom:1;}
+
+.limiter{
+	width: 95%;
+	height: 40px;
+	border-left: 15px solid #5094C0;
+	margin-bottom: 20px;
+	padding: none;
+	border-bottom: 1px solid #f1f1f1;
+	
+}
+
+.limiter p{
+	line-height: 30px;
+	text-align: left;
+	font-family: "华文中宋", arial;
+	font-size: 24px;
+	margin: none;
+}
+
+#nav{
+	position: fixed;
+	top: 0;
+	z-index: 100;
+	background: #fbfbfb;
+	border-bottom: 1px solid #f1f1f1;
+	left: 0;
+	right: 0;
+}
+
+/*参考了google的标题设计*/
+#nav.maximum{
+	border-color: #f1f1f1;
+	height: 60px;
+	padding-top: 14px;
+	box-shadow: 0 0 8px rgba(0,0,0,0.2);
+	transition: padding 0.25s ease;
+	-moz-transition: padding 0.25s ease;
+	-webkit-transition: padding 0.25s ease;
+}
+
+#nav.minimum {
+	border-color: #bbb;
+	padding-top: 10px;
+	box-shadow: 0 0 8px rgba(0,0,0,0.1);
+	height: 40px;
+	transition: padding 0.25s ease;
+	-moz-transition: padding 0.25s ease;
+	-webkit-transition: padding 0.25s ease;
+}
+
+
+#logo{
+	float: left;
+	height: 100%;
+	margin-top: -11px;
+	margin-left: 40px;
+	margin-right: 30px;
+	width: 100px;
+}
+
+#contentWrap{
+	height: 1950px;
+	width: 1224px;
+	margin-top: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	/*border: dotted;
+	border-color: #000;*/
+}
+
+#footer{
+	margin-top: 20px;
+	line-height: 25px;
+	height: 80px;
+	width: 100%;
+	font-size: 18px;
+	font-family: arial, "华文中宋";
+	text-align: center;
+}
+
+#left, #right{
+	width: 80px;
+	height: 80px;
+	padding:10px;
+	padding-top: 200px;
+	cursor: pointer;
+}
+
+#left{
+	float: left;
+}
+
+#right{
+	float: right;
+}
+
+#left img{
+	width: 80px;
+	height: 80px;
+}
+
+#right img{
+	width: 80px;
+	height: 80px;
+}
+/********************图片轮滚部分**********************/
+#slideWrap{
+	width: 1024px;
+	height: 650px;
+	margin-right: 100px;
+	margin-left: 100px;
+}
+
+.slideImg{
+	width: 1024px;
+	height: 500px;
+	display: block;
+	float: left;
+}
+
+.maskImg{
+	width: 140px;
+	height: 70px;
+	display: block;
+	float: left;
+}
+
+
+#slideBox{
+	width: 1024px;
+	height: 650px;
+	/*
+	border: dotted;
+	border-color: #eee;*/
+	overflow: hidden;
+	position: relative;
+	/*box-shadow: 0 0 1em #808080;*/
+}
+
+#imageBox{
+	position: absolute;
+	height: 500px;
+	width: 8192px;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+}
+
+#maskBox{
+	position: absolute;  
+	margin-top:510px;
+	margin-right: 50px;
+	width: 1400px;
+	height: 150px;
+	text-align: center;
+	overflow: hidden;
+	line-height: 40px;
+	z-index: 2;
+}
+
+#maskBox span{
+	display: block;
+	float: left;
+	height: 70px;
+	width: 160px;
+	overflow: hidden;
+	cursor: pointer;
+	padding: 5px 5px 0px 0px;
+	opacity: 0.3;
+}
+
+#maskBox span.current{
+	background-position: 0px -12px;
+	cursor:default;
+	opacity: 1;
+	width: 160px;
+	height: 120px;
+}
+
+#titleBox{
+	margin-top: 420px;
+	opacity: 0;
+	height: 80px;
+	width: 8192px;
+	background: #222222;
+	position: absolute;
+	left: 0;
+}
+
+#titleBox span{
+	float: left;
+	display: block;
+	width: 1024px;
+	height: 60;
+	padding-top: 10px;
+	padding-bottom: 10px;
+
+	text-align: center;
+	color: white;
+	font-size: 36px;
+	font-family: "华文中宋", arial;
+}
+
+/***********************评论部分*******************************/
+#reviewWrap{
+	width: 1024px;
+	height: 1300px;
+	overflow: hidden;
+	margin-left: 100px;
+	margin-right: 100px;
+}
+
+
+.review{
+	margin-right: 20px;
+	overflow: hidden;
+	width: 65%;
+	height: 1200px;
+	position: relative;
+	/*border: dotted;*/ 
+	float: left;
+}
+
+.reviewSingle{
+	width: 95%;
+	height: 200px;
+	margin-bottom: 15px;
+	border: 1px solid #f1f1f1;
+	/*border-bottom: 1px solid #f1f1f1;*/
+	box-shadow: 0 0 8px rgba(0,0,0,0.2);
+}
+
+.personImage{
+	margin-top: 10px;
+	margin-left: 10px;
+	width: 100px;
+	height: 200px;
+	float: left;
+}
+
+.headImg{
+	width: 100px;
+	height: 100px;
+}
+
+.name{
+	height: 25px;
+	width: 150px;
+	float: left;
+}
+
+.name p{
+	line-height: 25px;
+	font-weight: bold;
+	font-family: "华文中宋", arial;
+	font-size: 20px;
+}
+
+.time p{
+	line-height: 20px;
+	font-family: times;
+	font-size: 20px;
+	color: #999999;
+}
+
+.time{
+	height: 20px;
+	float: right;
+	margin-right: 20px;
+}
+
+.reviewContent{
+	margin-top: 50px;
+	height: 90px;
+	margin-left: 120px;
+	margin-right: 20px;
+}
+
+.reviewContent p{
+	line-height: 24px;
+	font-size: 20px;
+	font-family: "宋体", arial;
+}
+
+/***********************翻页部分*******************************/
+/***	看不太懂老师给的demo里的代码，索性就自己实现了    *****/
+/***************************************************************/
+.pagesWrap{
+	height: 60px;
+	width: 40%;
+	float: left;
+	margin-left: 120px;
+}
+
+.pagesWrap span{
+	display: block;
+	float: left;
+	height: 25px;
+	overflow: hidden;
+	cursor: pointer;
+	padding: 5px 5px 0px 0px;
+	border: 2px solid #5094C0;
+	background: #E6E6E6;
+	text-align: center;
+	color: #30719D;
+	margin: 5px;
+}
+
+.pagesWrap span.current{
+	/*display: block;
+	float: left;
+	height: 25px;
+	width: 50px;
+	overflow: hidden;
+	padding: 5px 5px 0px 0px;
+	border: 2px solid #5094C0;
+	text-align: center;
+	margin: 5px;*/
+
+	cursor: default;
+	background: #30719D;
+	color: white;
+}
+
+.pagesWrap span.num-page{
+	width: 25px;
+}
+
+#head-page, #pre-page, #next-page, #tail-page{
+	width: 50px;
+}
+
+
+/*********************新闻故事****************************/
+.news{
+	width: 30%;
+	height: 1300px;
+	float: right;
+}
+
+.newsSingle{
+	width: 95%;
+	height: 200px;
+	margin-bottom: 15px;
+	border: 1px solid #f1f1f1;
+	/*border-bottom: 1px solid #f1f1f1;*/
+	box-shadow: 0 0 8px rgba(0,0,0,0.2);
+	cursor: pointer;
+}
+
+.insertImg{
+	margin: 5px;
+	width: 97%;
+	height: 190px;
+}

@@ -1,0 +1,130 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>News Online</title>
+    <meta content="text/html; charset=utf-8">
+    <meta name="keyword" content="新闻, 杨妍喆, 清华软件">
+    <meta name="description" content="新闻直播间">
+    <meta name="time" content="2014年7月9日">
+    <meta name="author" content="杨妍喆">
+    <link rel="stylesheet" type="text/css" href="css/layout.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.js"></script>
+    <script type="text/javascript" src="js/slides.js"></script>
+  </head>
+
+  <body>
+    <!-页头->
+    <section id='nav' class="maximum clearfix">
+      <a id='logo' title='新闻'><img src="img/logo.jpg" height=120% width=350px></a>
+    </section>
+
+    <!-主体->
+
+    <section id='contentWrap'>
+
+      <div id='left'><img src="img/left.jpg"></div>
+      <div id='right'><img src="img/right.jpg"></div>
+
+      <!-图片滚播新闻->
+      <section id='slideWrap'>
+        <div id='slideBox'>
+          <div id='imageBox'>
+            <a><img src="" class="slideImg"></a>
+            <a><img src="" class="slideImg"></a>
+            <a><img src="" class="slideImg"></a>
+            <a><img src="" class="slideImg"></a>
+            <a><img src="" class="slideImg"></a>
+            <a><img src="" class="slideImg"></a>
+            <a><img src="" class="slideImg"></a>
+            <a><img src="" class="slideImg"></a>
+          </div>
+
+          <div id="maskBox">
+            <span rel="1"><img src="" class="maskImg"></span>
+            <span rel="2"><img src="" class="maskImg"></span>
+            <span rel="3"><img src="" class="maskImg"></span>
+            <span rel="4"><img src="" class="maskImg"></span>
+            <span rel="5"><img src="" class="maskImg"></span>
+            <span rel="6"><img src="" class="maskImg"></span>
+            <span rel="7"><img src="" class="maskImg"></span>
+            <span rel="8"><img src="" class="maskImg"></span>
+          </div>
+
+          <div id="titleBox">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </section>
+
+      <section id="reviewWrap">
+
+        <div class='news'>
+          <div class="limiter"><p>新闻故事</p></div>
+          <div class="newsSingle" id='1'><a rel="1"><img src="" class="insertImg"></a></div>
+          <div class="newsSingle" id='2'><a rel="2"><img src="" class="insertImg"></a></div>
+          <div class="newsSingle" id='3'><a rel="3"><img src="" class="insertImg"></a></div>
+          <div class="newsSingle" id='4'><a rel="4"><img src="" class="insertImg"></a></div>
+          <div class="newsSingle" id='5'><a rel="5"><img src="" class="insertImg"></a></div>
+        </div>
+
+        <div class='review'>
+          <div class="limiter"><p>新闻评论</p></div>
+          <div rel='1' class="reviewSingle clear">
+            <a class="personImage"><img src class="headImg"></a>
+            <div class="name"><p></p></div>
+            <div class="reviewContent"><p></p></div>
+            <div class="time"><p></p></div>
+          </div> 
+          <div rel='2' class="reviewSingle clear">
+            <a class="personImage"><img src class="headImg"></a>
+            <div class="name"><p></p></div>
+            <div class="reviewContent"><p></p></div>
+            <div class="time"><p></p></div>
+          </div> 
+          <div rel='3' class="reviewSingle clear">
+            <a class="personImage"><img src class="headImg"></a>
+            <div class="name"><p></p></div>
+            <div class="reviewContent"><p></p></div>
+            <div class="time"><p></p></div>         
+          </div> 
+          <div rel='4' class="reviewSingle clear">
+            <a class="personImage"><img src class="headImg"></a>
+            <div class="name"><p></p></div>
+            <div class="reviewContent"><p></p></div>
+            <div class="time"><p></p></div>
+          </div> 
+          <div rel='5' class="reviewSingle clear">
+            <a class="personImage"><img src class="headImg"></a>
+            <div class="name"><p></p></div>
+            <div class="reviewContent"><p></p></div>
+            <div class="time"><p></p></div>
+          </div> 
+        </div>
+
+        <div class="pagesWrap">
+          <span id="head-page">首页</span>
+          <span id="pre-page">上一页</span>
+          <span class="num-page" rel="1">1</span>
+          <span class="num-page" rel="2">2</span>
+          <span class="num-page" rel="3">3</span>
+          <span id="next-page">下一页</span>
+          <span id="tail-page">末页</span>
+        </div>
+      </section>
+
+    </section>
+
+    <!-页尾->
+    <section id='footer'>
+      Copyright &copy; 2014 Yang Yanzhe, All Rights Reserved<br/>
+      清华大学 &nbsp; &nbsp; 软件学院
+    </section> 
+  </body>
+</html>
