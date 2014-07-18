@@ -130,10 +130,11 @@ div{
 }
 /********************图片轮滚部分**********************/
 #slideWrap{
-	width: 1024px;
-	height: 650px;
-	margin-right: 100px;
-	margin-left: 100px;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	top: 0;
+	bottom: 0;
 }
 
 .slideImg{
